@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- top page start -->
+    <template id="topTemplate">
+      <div class="bg-white">
+        <h1 class="pt-3 px-4 text-center">Clicker Empire Game</h1>
+        <div class="input-group p-4 px-4 col-9 m-auto">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="ユーザ名を入力してください"
+          />
+        </div>
+        <div class="d-flex justify-content-around p-2 mb-2">
+          <button type="button" class="btn btn-primary col-5 text-white">
+            New Game
+          </button>
+          <button type="button" class="btn btn-primary col-5 text-white">
+            Login
+          </button>
+        </div>
+      </div>
+    </template>
+    <div id="top" class="wrapper bg-dark"></div>
+    <!-- top page end -->
+    <template id="mainTemplate">
+      <div class="container bg-light d-flex">
+        <!-- hamburger -->
+        <div class="col-5 p-2">
+          <div
+            id="hamburgerInfo"
+            class="text-center text-white bg-secondary py-2"
+          ></div>
+          <div
+            class="d-flex justify-content-center align-items-center"
+            id="humbergerPic"
+          >
+            <img
+              src="https://cdn.pixabay.com/photo/2014/04/02/17/00/burger-307648_960_720.png"
+              width="60%"
+              class="py-4 hamburger"
+            />
+          </div>
+        </div>
+        <!-- right side -->
+        <div class="col-7 p-2">
+          <!-- user -->
+          <div
+            id="userInfo"
+            class="text-center text-white bg-secondary py-2"
+          ></div>
+          <!-- item -->
+          <div id="itemInfo" class="bg-secondary py-2 mt-2 itembox"></div>
+          <div
+            id="itemDetail"
+            class="bg-secondary py-2 mt-2 itembox d-none"
+          ></div>
+          <div class="d-flex justify-content-end mt-2">
+            <div class="border p-2 mr-2" id="reset" title="リセットする">
+              <i class="fas fa-undo fa-2x"></i>
+            </div>
+            <div class="border p-2 mr-2" id="save" title="セーブ">
+              <i class="fas fa-save fa-2x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+    <div id="main" class="wrapper bg-dark"></div>
+  </body>
+</html>

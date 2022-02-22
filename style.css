@@ -1,0 +1,45 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.border {
+  border: solid 2px !important;
+}
+
+.itembox {
+  border: 1px solid #333333;
+  width: 100%;
+  height: 70vh;
+  overflow: auto;
+}
+
+.text-orange {
+  color: #ff6e00;
+}
+
+.item:hover {
+  border: 2px solid steelblue;
+  cursor: pointer;
+}
+
+.hamburger:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#reset:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#save:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}

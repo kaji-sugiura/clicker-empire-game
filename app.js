@@ -271,7 +271,7 @@ class ItemDetail {
         alert(errorMessage.lackOfMoney);
         return;
       }
-      if (this.isOverMaxAmount(inputEl.value, item)) {
+      if (this.isOverMaxAmount(+inputEl.value, item)) {
         alert(errorMessage.overAmount);
         return;
       }
